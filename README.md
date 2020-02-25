@@ -1,6 +1,22 @@
 # ITchat
 
+iTchat is an Angular project that I made for school.
+This is a MEAN stack demo.
+
+App made with :
+* Angular 8.3.6
+* Angular Materials
+* Bootstrap 3
+* Express.js
+* Node.js
+* MongoDB
+
+## Screenshots
+
+![iTCHAT](https://github.com/JereDacosta/iTchat/blob/master/iTchatScreenShots/ITchat_Signup.jpg) 
+![iTCHAT](https://github.com/JereDacosta/iTchat/blob/master/iTchatScreenShots/ITchat_Login.jpg)
 ![iTCHAT](https://github.com/JereDacosta/iTchat/blob/master/iTchatScreenShots/ITchat_Chat.jpg)
+![iTCHAT](https://github.com/JereDacosta/iTchat/blob/master/iTchatScreenShots/ITchat_Info.jpg)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
