@@ -1,5 +1,7 @@
 # ITchat
 
+![iTCHAT](https://github.com/JereDacosta/iTchat/blob/master/iTchatScreenShots/ITchat_Chat.jpg)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
 ## Development server
