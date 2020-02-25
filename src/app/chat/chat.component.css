@@ -1,0 +1,49 @@
+#msg
+{
+font-size: 25px;
+}
+
+.btn-rounded
+{
+  border-radius: 25px;
+  margin-right:8px;
+}
+
+.form-rounded {
+  border-radius: 25px;
+}
+
+.scroll {
+  overflow-y: auto;
+}
+
+input[type=text]:focus {
+  border: 2px solid dodgerblue;
+}
+
+::-webkit-scrollbar {
+  width: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  border: 6px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  background-color: dodgerblue;
+}
+
+::-webkit-scrollbar-track-piece:end {
+  margin-bottom: 12px;
+}
+
+::-webkit-scrollbar-track-piece:start {
+  margin-top: 12px;
+}
+
+a:hover{
+  cursor:pointer;
+}
+
+input[type=text]:hover {
+  border: 2px solid dodgerblue;
+}

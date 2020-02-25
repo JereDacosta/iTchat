@@ -1,0 +1,33 @@
+<body style="background-color:#dfeaf0;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" (click)="gotoChat()">i TCHAT</a>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" (click)="gotoChat()" matTooltip="Chat with the world!"><fa name="fas fa-comment fa-lg"></fa></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" matTooltip="Informations?"><fa name="fas fa-info-circle fa-lg"></fa><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="leave()" matTooltip="Log out!"><fa name="fas fa-sign-out fa-lg"></fa></a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/JereDacosta" matTooltip="My Github"><fa name="fab fa-github fa-2x"></fa></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="text-center">
+    <h2 class="h2 text-primary">i TCHAT</h2>
+    <p>
+      <strong>i TCHAT</strong> is a school project made for an Angular class. <br />
+      This project is made with Angular 8.3.6, Angular Materials, <br />
+      Bootstrap 3, Font Awesome, Express.js, Node.js and MongoDB.
+    </p>
+    <p>Made by <i>Jérémy Da Costa</i> - 2019</p>
+    <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/JereDacosta" matTooltip="My Github"><fa name="fab fa-github fa-2x"></fa></a>
+  </div>
+</body>

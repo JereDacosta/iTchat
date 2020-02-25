@@ -1,0 +1,27 @@
+
+<body>
+  <div class="wrapper fadeMiddle">
+    <div id="form-content">
+      <div>
+        <br />
+        <p class="text-center lead text-primary">i TCHAT</p>
+      </div>
+      <form [formGroup]="form" (ngSubmit)="connect()">
+        <input type="text" id="username" name="username" placeholder="Username" [(ngModel)]="username" formControlName="username">
+        <p *ngIf="form.controls['username'].invalid && (form.controls['username'].dirty || form.controls['username'].touched)" class="text-danger">
+          Username field is required
+        </p>
+        <input type="password" id="password" name="password" placeholder="Password" [(ngModel)]="password" formControlName="password">
+        <p *ngIf="form.controls['password'].invalid && (form.controls['password'].dirty || form.controls['password'].touched)" class="text-danger">
+          Password field is required
+        </p>
+        <input type="submit" value="ACCESS TO i TCHAT">
+      </form>
+      <div id="form-footer">
+        <a (click)="gotoSignUp()">Don't have an account ?</a>
+        <br />
+        <a (click)="connectAsDev()">Connect me as developper!</a>
+      </div>
+    </div>
+  </div>
+</body>

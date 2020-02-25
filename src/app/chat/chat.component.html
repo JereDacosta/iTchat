@@ -1,0 +1,55 @@
+<body style="background-color:#dfeaf0;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" >i TCHAT</a>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" matTooltip="Chat with the world!"><fa name="fas fa-comment fa-lg"></fa><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" matTooltip="Informations?" (click)="gotoInfos()"><fa name="fas fa-info-circle fa-lg"></fa></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="leave()" matTooltip="Log out!"><fa name="fas fa-sign-out fa-lg"></fa></a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://github.com/JereDacosta" matTooltip="My Github"><fa name="fab fa-github fa-2x"></fa></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <div class="container-fluid">
+    <div>
+      <br />
+    </div>
+    <div class="card card-body scroll" id="messages-box" style="height:650px; padding:15px; border-radius:25px;" #msgDiv >
+      <div *ngFor="let item of _chatService.messages$">
+        <span id="msg"><strong class="text-primary" matTooltip="{{item.date}}">{{item.sender}} : </strong> {{item.message}}</span>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-sm-10">
+        <form (submit)="sendMessage()">
+          <input type="text" class="form-control form-rounded" name="messageText" placeholder="Write your message here!" [(ngModel)]="messageText" autofocus
+                 autocomplete="off">
+          <p class="text-primary">
+            <fa name="fas fa-user" style="display:inline;"></fa><strong> Connected as :</strong> {{this.user}}
+          </p>
+        </form>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" class="btn btn-rounded btn-success" (click)="eraseMessage()" matTooltip="Erase message box!">
+          <fa name="fas fa-eraser"></fa>
+        </button>
+        <button type="button" class="btn btn-rounded btn-primary" (click)="sendMessage()" matTooltip="Send message!">
+          <fa name="fas fa-paper-plane"></fa>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+

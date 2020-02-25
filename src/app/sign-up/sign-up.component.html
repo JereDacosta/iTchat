@@ -1,0 +1,28 @@
+<body>
+  <div class="wrapper fadeMiddle">
+    <div id="form-content">
+      <div>
+        <br />
+        <p class="text-center lead text-primary">i TCHAT</p>
+      </div>
+      <form [formGroup]="form" (ngSubmit)="createAccount()">
+        <input type="text" id="username" name="username" placeholder="Username (minimum 4 characters)" [(ngModel)]="username" formControlName="username">
+        <p *ngIf="form.controls['username'].invalid && (form.controls['username'].dirty || form.controls['username'].touched)" class="text-danger">
+          Username must be 4 characters minimum!
+        </p>
+        <input type="password" id="password" name="password" placeholder="Password (minimum 4 characters)" [(ngModel)]="password" formControlName="password">
+        <p *ngIf="form.controls['password'].invalid && (form.controls['password'].dirty || form.controls['password'].touched)" class="text-danger">
+          Password must be 4 characters minimum!
+        </p>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" [(ngModel)]="confirmPassword" formControlName="passwordConfirm">
+        <p *ngIf="password != confirmPassword && (form.controls['password'].dirty || form.controls['password'].touched)" class="text-danger">
+          Confirmation must match password!
+        </p>
+        <input type="submit" value="CREATE ACCOUNT">
+      </form>
+      <div id="form-footer">
+        <a (click)="gotoLogIn()">Click here to login!</a>
+      </div>
+    </div>
+  </div>
+</body>
