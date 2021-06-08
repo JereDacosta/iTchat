@@ -1,7 +1,6 @@
 # ITchat
 
-iTchat is an Angular project that I made for school.
-This is a MEAN stack demo.
+iTchat is an Angular project for school.
 
 App made with :
 * Angular 8.3.6
